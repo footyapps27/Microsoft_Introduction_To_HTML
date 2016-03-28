@@ -1,0 +1,73 @@
+main {
+    padding: 5px 10px;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+main figure > figcaption {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+main figure > figcaption::before {
+    content: 'Pictured above: ';
+    font-weight: bold;    
+}
+
+article > time {
+    float: right;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+
+article {
+    margin: 5px 0px;
+    padding: 5px 5px;
+    box-shadow: -1px -1px 6px #888888;
+}
+
+@media not print {
+    h3, article h4 {
+    color: #8C1018;
+    }
+
+    article a {
+    color: #314052;
+    }
+    
+    body {
+    color: #635959;
+    font-family: "News Cycle", sans-serif;
+    }
+
+    header {
+    background-color: #242323;
+    color: #EFEFEF;
+    padding: 20px 50px;
+    font-family: 'Contrail One', cursive;
+    }
+    
+    main > h3 {
+    font-size: 2em;
+    }
+}
+
+@media print {
+    header {
+        padding: 0px;
+    }
+    
+    article {
+        box-shadow: none;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header h2 {
+        display: none;
+    }
+}
